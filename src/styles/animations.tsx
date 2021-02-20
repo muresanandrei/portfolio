@@ -31,12 +31,26 @@ const upDownWide = keyframes`
   }
 `
 
+const fadeIn = keyframes`
+  from {
+    opacity:0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity:1;
+    transform: translateX(0);
+  }
+`
+
 const upDownAnimation = css`
   ${upDown} 10s ease-in-out infinite alternate;
 `
 
 const upDownWideAnimation = css`
   ${upDownWide} 5s ease-in-out infinite alternate;
+`
+const fadeInAnimation = css`
+  ${fadeIn} .5s cubic-bezier(.43,.61,.72,.83) forwards;
 `
 
 export const UpDown = styled.div`
@@ -56,6 +70,11 @@ export const UpDownWide = styled.div`
   right: 0;
   bottom: 0;
 `
+
+export const FadeIn = styled.div`
+   width:100%;
+   animation: ${fadeInAnimation};
+`;
 
 export const waveAnimation = (length: string) => css`
   animation: ${wave} ${length} linear infinite alternate;
