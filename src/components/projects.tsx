@@ -17,7 +17,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       offset={1.1}
       factor={factor}
     />
-    <Content speed={0.4} offset={offset + 0.2} factor={factor}>
+    <Content speed={0.8} offset={offset + 0.2} factor={factor}>
       <Inner>
         <div
           sx={{

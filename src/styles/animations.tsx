@@ -15,10 +15,10 @@ const wave = keyframes`
 
 const upDown = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0) scale(1);
   }
   to {
-    transform: translateY(30px);
+    transform: translateY(30px) rotate(360deg) scale(0.2);
   }
 `
 
@@ -32,11 +32,11 @@ const upDownWide = keyframes`
 `
 
 const upDownAnimation = css`
-  ${upDown} 4s ease-in-out infinite alternate;
+  ${upDown} 10s ease-in-out infinite alternate;
 `
 
 const upDownWideAnimation = css`
-  ${upDownWide} 18s ease-in-out infinite alternate;
+  ${upDownWide} 15s ease-in-out infinite alternate;
 `
 
 export const UpDown = styled.div`

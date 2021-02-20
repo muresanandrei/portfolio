@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - @lekoarts/gatsby-theme-cara`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitle: `Andrei Muresan`,
+    siteTitleAlt: `Andrei Muresan - Software Engineer`,
+    siteHeadline: `Andrei Muresan - Software Engineer`,
+    siteUrl: `https://andreimuresan.com`,
+    siteDescription: `Fullstack Software Engineer`,
     siteLanguage: `en`,
     siteImage: `/`,
     author: `@andreimuresan`,
