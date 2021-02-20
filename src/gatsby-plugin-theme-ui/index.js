@@ -55,7 +55,7 @@ const theme = merge(tailwind, {
       WebkitFontSmoothing: `antialiased`,
       MozOsxFontSmoothing: `grayscale`,
       color: `text`,
-      backgroundColor: `background`,
+      backgroundColor: `#000000`,
       a: {
         color: `primary`,
         textDecoration: `none`,
@@ -86,7 +86,7 @@ const theme = merge(tailwind, {
       fontSize: [6, 7, 8],
       mt: 2,
       mb: 3,
-      textShadow: `rgba(255, 255, 255, 0.75) 0px 5px 35px`,
+      textShadow: `rgba(255, 255, 255, 0.65) 0px 5px 35px`,
       letterSpacing: `wide`,
       color: `heading`,
     },

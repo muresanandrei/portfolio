@@ -37,10 +37,10 @@ const upDownWide = keyframes`
 
 const fadeIn = keyframes`
   from {
-    color:rgba(255,255,255,0);
+    color:rgba(249,246,239,0);
   }
   to {
-    color:rgba(255,255,255,1);
+    color:rgba(249,246,239,1);
   }
 `
 
@@ -77,7 +77,7 @@ export const FadeIn = styled.div`
    width:100%;
    
    h1, p { 
-    color:rgba(255,255,255,0);
+    color:rgba(249,246,239,0);
     animation: ${fadeInAnimation};
    }
 `;
