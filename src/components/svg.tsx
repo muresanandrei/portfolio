@@ -65,9 +65,42 @@ const icons = {
     ),
     viewBox: `0 0 100 100`,
   },
+  computer: {
+    shape: (
+       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2px"
+        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
+      />
+    ),
+    viewBox: `0 0 24 24`
+  },
+  lighting: {
+    shape: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={"2px"}
+        d="M13 10V3L4 14h7v7l9-11h-7z"
+      />
+    ),
+    viewBox: `0 0 24 24`
+  },
+  variable: {
+    shape: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={"2px"}
+       d="M4.871 4A17.926 17.926 0 003 12c0 2.874.673 5.59 1.871 8m14.13 0a17.926 17.926 0 001.87-8c0-2.874-.673-5.59-1.87-8M9 9h1.246a1 1 0 01.961.725l1.586 5.55a1 1 0 00.961.725H15m1-7h-.08a2 2 0 00-1.519.698L9.6 15.302A2 2 0 018.08 16H8" 
+      />
+    ),
+    viewBox: `0 0 24 24`
+  },
+  server: {
+    shape: (
+      <path fillRule="evenodd" 
+       d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd" 
+      />
+    ),
+    viewBox: `0 0 20 20`
+  },
 }
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross"
+
+type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "computer" | "lighting" | "variable" | "server"
 
 type SVGProps = {
   stroke?: boolean
@@ -81,6 +114,7 @@ type SVGProps = {
 
 const SVG = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile = false }: SVGProps) => (
   <svg
+    className="svgElements"
     sx={{
       position: `absolute`,
       stroke: stroke ? `currentColor` : `none`,

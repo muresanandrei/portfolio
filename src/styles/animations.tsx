@@ -18,16 +18,16 @@ const upDown = keyframes`
     transform: translateY(0) rotate(0) scale(1);
   }
   to {
-    transform: translateY(30px) rotate(360deg) scale(0.2);
+    transform: translateY(30px) rotate(360deg) scale(0.5);
   }
 `
 
 const upDownWide = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateY(0) rotate(0) scale(1);
   }
   to {
-    transform: translateY(200px);
+    transform: translateY(200px) rotate(10deg) scale(0.9);;
   }
 `
 
@@ -36,7 +36,7 @@ const upDownAnimation = css`
 `
 
 const upDownWideAnimation = css`
-  ${upDownWide} 15s ease-in-out infinite alternate;
+  ${upDownWide} 5s ease-in-out infinite alternate;
 `
 
 export const UpDown = styled.div`
