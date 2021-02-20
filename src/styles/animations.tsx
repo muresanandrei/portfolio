@@ -37,12 +37,10 @@ const upDownWide = keyframes`
 
 const fadeIn = keyframes`
   from {
-    opacity:0;
-    transform: translateX(-100%);
+    color:rgba(255,255,255,0);
   }
   to {
-    opacity:1;
-    transform: translateX(0);
+    color:rgba(255,255,255,1);
   }
 `
 
@@ -54,7 +52,7 @@ const upDownWideAnimation = css`
   ${upDownWide} 5s ease-in-out infinite alternate;
 `
 const fadeInAnimation = css`
-  ${fadeIn} .5s cubic-bezier(.43,.61,.72,.83) forwards;
+  ${fadeIn} 2s cubic-bezier(.43,.61,.72,.83) forwards;
 `
 
 export const UpDown = styled.div`
@@ -77,8 +75,11 @@ export const UpDownWide = styled.div`
 
 export const FadeIn = styled.div`
    width:100%;
-   opacity:0;
-   animation: ${fadeInAnimation};
+   
+   h1, p { 
+    color:rgba(255,255,255,0);
+    animation: ${fadeInAnimation};
+   }
 `;
 
 export const waveAnimation = (length: string) => css`
