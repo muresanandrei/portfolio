@@ -12,7 +12,7 @@ import ContactMDX from "../sections/contact"
 
 const InnerWave = styled.div`
   path {
-    ${waveAnimation(`20s`)};
+    ${waveAnimation(`15s`)};
   }
 `
 
