@@ -15,18 +15,22 @@ const wave = keyframes`
 
 const upDown = keyframes`
   from {
+    opacity:1;
     transform: translateY(0) rotate(0) scale(1);
   }
   to {
+    opacity:0;
     transform: translateY(30px) rotate(360deg) scale(0.5);
   }
 `
 
 const upDownWide = keyframes`
   from {
+    opacity:0.1;
     transform: translateY(0) rotate(0) scale(1);
   }
   to {
+    opacity:1;
     transform: translateY(200px) rotate(10deg) scale(0.9);;
   }
 `
@@ -43,7 +47,7 @@ const fadeIn = keyframes`
 `
 
 const upDownAnimation = css`
-  ${upDown} 10s ease-in-out infinite alternate;
+  ${upDown} 7s ease-in-out infinite alternate;
 `
 
 const upDownWideAnimation = css`
@@ -73,6 +77,7 @@ export const UpDownWide = styled.div`
 
 export const FadeIn = styled.div`
    width:100%;
+   opacity:0;
    animation: ${fadeInAnimation};
 `;
 
