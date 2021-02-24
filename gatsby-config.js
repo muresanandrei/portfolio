@@ -4,7 +4,7 @@ module.exports = {
     siteTitleAlt: `Andrei Muresan - Software Engineer`,
     siteHeadline: `Andrei Muresan - Software Engineer`,
     siteUrl: `https://andreimuresan.com`,
-    siteDescription: `Fullstack Software Engineer`,
+    siteDescription: `I'm a senior software engineer with over 7 years of experience of deploying scalable web projects and mobile apps using PHP (Laravel), Node.js, Go, React & React Native.`,
     siteLanguage: `en`,
     siteImage: `/`,
     author: `@andreimuresan`,
